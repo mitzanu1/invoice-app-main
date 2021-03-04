@@ -4,10 +4,13 @@ import 'firebase/auth'
 
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyBPWPlu-yxuIYAEzszqjxM6coY622cFyrY',
-  authDomain: 'invoice-app-1605452741766.firebaseapp.com',
-  databaseURL: 'https://invoice-app-1605452741766.firebaseio.com/',
-  projectId: 'invoice-app-1605452741766'
+  apiKey: "AIzaSyABXjAulfa2QYb9eOLWSiChfVxMsIAMfj8",
+  authDomain: "invoice-app-63185.firebaseapp.com",
+  databaseURL: "https://invoice-app-63185-default-rtdb.firebaseio.com",
+  projectId: "invoice-app-63185",
+  messagingSenderId: "442485802345",
+  storageBucket: "invoice-app-63185.appspot.com",
+  appId: "1:442485802345:web:d13be168b034ec7a0be9f8"
 })
 
 export default firebase
