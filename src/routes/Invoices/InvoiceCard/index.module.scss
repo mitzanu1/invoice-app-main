@@ -1,0 +1,33 @@
+@import "constants.module.scss";
+
+.invoiceCard {
+  flex: none;
+  display: flex;
+  min-height: 12rem;
+}
+
+.invoice {
+  flex: 1;
+  margin: 1px;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divider {
+  margin: 0.5rem 0;
+}
+
+.partnerName {
+  padding-right: 0.35rem;
+}
+
+.total {
+  margin: 0;
+}
+
+.button {
+  margin: 0.25rem;
+}

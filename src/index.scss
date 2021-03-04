@@ -1,0 +1,59 @@
+@import 'constants.module.scss';
+
+html {
+  overflow: hidden;
+  font-weight: 400;
+  font-family: Lato;
+  font-size: 14px;
+  color: $primary;
+}
+
+body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  background-color: $background;
+}
+
+#root {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.centered {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ant-form-vertical {
+  .ant-form-item:not(.ant-form-item-with-help) {
+    margin-bottom: 1.25rem;
+  }
+
+  .ant-form-item-label {
+    label {
+      font-size: 1rem;
+    }
+    
+    padding-bottom: 0;
+  }
+
+  .ant-form-item-explain {
+    min-height: 1.25rem;
+    line-height: 1.25rem;
+    font-size: .85rem;
+  }
+}
+

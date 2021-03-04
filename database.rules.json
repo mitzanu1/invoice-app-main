@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "accounts": {
+      "$accountId": {
+        ".read": "root.child('permissions').child(auth.email.replace(/./g, '_@@_')).child($accountId).exists() || !root.child('accounts').child($accountId).exists()",
+        ".write": "root.child('permissions').child(auth.email.replace(/./g, '_@@_')).child($accountId).exists() || !root.child('accounts').child($accountId).exists()"
+      }
+    },
+    "permissions": {
+      "$emailCode": {
+        ".read": "auth.email.replace(/./g, '_@@_') == $emailCode",
+        "$accountId": {
+          ".write": "root.child('permissions').child(auth.email.replace(/./g, '_@@_')).child($accountId).exists() || !root.child('accounts').child($accountId).exists()"
+        }
+      }
+    }
+  }
+}

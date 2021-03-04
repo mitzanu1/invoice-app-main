@@ -1,0 +1,31 @@
+@import "constants.module.scss";
+
+.login {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+
+  :global {
+    .ant-form-item-control-input-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.button {
+  margin: 0.35rem 0;
+}
+
+.link {
+  align-self: flex-end;
+  padding: 0;
+  font-size: 0.9rem;
+}

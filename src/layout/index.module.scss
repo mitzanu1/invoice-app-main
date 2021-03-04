@@ -1,0 +1,94 @@
+@import "constants.module.scss";
+
+.layout {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.button {
+  margin: 0.25rem;
+}
+
+.navbar {
+  flex: none;
+  :global {
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: $sm) {
+  .layout {
+    flex-direction: column-reverse;
+  }
+
+  .navbar {
+    :global {
+      .ant-card-body {
+        flex-direction: row;
+      }
+    }
+
+    .left {
+      flex-direction: row;
+    }
+
+    .right {
+      flex-direction: row;
+    }
+  }
+}
+
+.header {
+  flex: none;
+  display: flex;
+  height: 5rem;
+  min-width: 0;
+
+  :global {
+    .ant-card-body {
+      min-width: 0;
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.children {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+}
+
+.userMenu {
+  margin-left: 1rem;
+}
